@@ -1,0 +1,519 @@
+{
+    "d": {
+        "_trace": [
+            "[\"gateway-prd-main-qlzq\",{\"micros\":0.0}]"
+        ],
+        "heartbeat_interval": 41250
+    },
+    "op": 10,
+    "s": null,
+    "t": null
+}
+{
+    "d": {
+        "_trace": [
+            "[\"gateway-prd-main-qlzq\",{\"micros\":129021,\"calls\":[\"discord-sessions-blue-prd-2-64\",{\"micros\":128150,\"calls\":[\"start_session\",{\"micros\":80454,\"calls\":[\"api-prd-main-qq08\",{\"micros\":73509,\"calls\":[\"get_user\",{\"micros\":5894},\"add_authorized_ip\",{\"micros\":4534},\"get_guilds\",{\"micros\":10695},\"coros_wait\",{\"micros\":1}]}]},\"guilds_connect\",{\"micros\":1,\"calls\":[]},\"presence_connect\",{\"micros\":9254,\"calls\":[]}]}]}]"
+        ],
+        "application": {
+            "flags": 262144,
+            "id": "901963489290113135"
+        },
+        "geo_ordered_rtc_regions": [
+            "santa-clara",
+            "us-west",
+            "seattle",
+            "us-south",
+            "us-central"
+        ],
+        "guild_join_requests": [],
+        "guilds": [
+            {
+                "id": "699800455655718962",
+                "unavailable": true
+            }
+        ],
+        "presences": [],
+        "private_channels": [],
+        "relationships": [],
+        "session_id": "d6609221aabe23136dade3b419f9a08f",
+        "user": {
+            "avatar": null,
+            "bot": true,
+            "discriminator": "1220",
+            "email": null,
+            "flags": 0,
+            "id": "901963489290113135",
+            "mfa_enabled": true,
+            "username": "AES3201-Scratch",
+            "verified": true
+        },
+        "user_settings": {},
+        "v": 9
+    },
+    "op": 0,
+    "s": 1,
+    "t": "READY"
+}
+{
+    "d": {
+        "afk_channel_id": null,
+        "afk_timeout": 300,
+        "application_command_count": 0,
+        "application_command_counts": {
+            "1": 0,
+            "2": 0,
+            "3": 0
+        },
+        "application_id": null,
+        "banner": null,
+        "channels": [
+            {
+                "id": "699800455655718963",
+                "name": "Text Channels",
+                "permission_overwrites": [
+                    {
+                        "allow": "0",
+                        "deny": "1024",
+                        "id": "699800455655718962",
+                        "type": 0
+                    },
+                    {
+                        "allow": "2048",
+                        "deny": "0",
+                        "id": "699811537690427404",
+                        "type": 0
+                    }
+                ],
+                "position": 1,
+                "type": 4
+            },
+            {
+                "id": "699800455655718964",
+                "name": "Voice Channels",
+                "permission_overwrites": [
+                    {
+                        "allow": "0",
+                        "deny": "3147264",
+                        "id": "699800455655718962",
+                        "type": 0
+                    }
+                ],
+                "position": 2,
+                "type": 4
+            },
+            {
+                "id": "699800455655718965",
+                "last_message_id": "901968555740889128",
+                "name": "general",
+                "parent_id": "699800455655718963",
+                "permission_overwrites": [
+                    {
+                        "allow": "0",
+                        "deny": "1024",
+                        "id": "699800455655718962",
+                        "type": 0
+                    },
+                    {
+                        "allow": "2048",
+                        "deny": "0",
+                        "id": "699811537690427404",
+                        "type": 0
+                    }
+                ],
+                "position": 6,
+                "rate_limit_per_user": 0,
+                "topic": null,
+                "type": 0
+            },
+            {
+                "bitrate": 64000,
+                "id": "699800455655718966",
+                "last_message_id": null,
+                "name": "General",
+                "parent_id": "699800455655718964",
+                "permission_overwrites": [
+                    {
+                        "allow": "0",
+                        "deny": "3147264",
+                        "id": "699800455655718962",
+                        "type": 0
+                    }
+                ],
+                "position": 0,
+                "rate_limit_per_user": 0,
+                "rtc_region": null,
+                "type": 2,
+                "user_limit": 0
+            },
+            {
+                "id": "699810895295152228",
+                "last_message_id": "706978667670274109",
+                "name": "todolist-python",
+                "parent_id": "699811280625729637",
+                "permission_overwrites": [
+                    {
+                        "allow": "0",
+                        "deny": "1024",
+                        "id": "699800455655718962",
+                        "type": 0
+                    }
+                ],
+                "position": 5,
+                "rate_limit_per_user": 0,
+                "topic": "this is todolist items for the python version of AES for public use.",
+                "type": 0
+            },
+            {
+                "id": "699811280625729637",
+                "name": "IMPORTANT",
+                "permission_overwrites": [
+                    {
+                        "allow": "0",
+                        "deny": "1024",
+                        "id": "699800455655718962",
+                        "type": 0
+                    }
+                ],
+                "position": 0,
+                "type": 4
+            },
+            {
+                "id": "699811332236509214",
+                "last_message_id": "799807028096270358",
+                "name": "announcement",
+                "parent_id": "699811280625729637",
+                "permission_overwrites": [
+                    {
+                        "allow": "0",
+                        "deny": "1024",
+                        "id": "699800455655718962",
+                        "type": 0
+                    }
+                ],
+                "position": 2,
+                "rate_limit_per_user": 0,
+                "topic": null,
+                "type": 0
+            },
+            {
+                "id": "699811362297086002",
+                "last_message_id": "707850195685212171",
+                "name": "rules",
+                "parent_id": "699811280625729637",
+                "permission_overwrites": [
+                    {
+                        "allow": "0",
+                        "deny": "1024",
+                        "id": "699800455655718962",
+                        "type": 0
+                    }
+                ],
+                "position": 1,
+                "rate_limit_per_user": 0,
+                "topic": null,
+                "type": 0
+            },
+            {
+                "id": "699811417435406342",
+                "last_message_id": "720078593949958204",
+                "name": "verification",
+                "permission_overwrites": [],
+                "position": 0,
+                "rate_limit_per_user": 0,
+                "topic": null,
+                "type": 0
+            },
+            {
+                "id": "700111252562903200",
+                "last_message_id": "700409036801179698",
+                "name": "code-regulation",
+                "parent_id": "699811280625729637",
+                "permission_overwrites": [
+                    {
+                        "allow": "0",
+                        "deny": "1024",
+                        "id": "699800455655718962",
+                        "type": 0
+                    }
+                ],
+                "position": 3,
+                "rate_limit_per_user": 0,
+                "topic": null,
+                "type": 0
+            },
+            {
+                "id": "700587665803706398",
+                "last_message_id": "749897564115173448",
+                "name": "gitlab-update",
+                "parent_id": "699811280625729637",
+                "permission_overwrites": [
+                    {
+                        "allow": "0",
+                        "deny": "1024",
+                        "id": "699800455655718962",
+                        "type": 0
+                    }
+                ],
+                "position": 4,
+                "rate_limit_per_user": 0,
+                "topic": null,
+                "type": 0
+            },
+            {
+                "id": "701181330129420750",
+                "last_message_id": "735539801104711741",
+                "name": "bot-test",
+                "parent_id": "699800455655718963",
+                "permission_overwrites": [
+                    {
+                        "allow": "0",
+                        "deny": "1024",
+                        "id": "699800455655718962",
+                        "type": 0
+                    },
+                    {
+                        "allow": "2048",
+                        "deny": "0",
+                        "id": "699811537690427404",
+                        "type": 0
+                    }
+                ],
+                "position": 7,
+                "rate_limit_per_user": 0,
+                "topic": null,
+                "type": 0
+            },
+            {
+                "id": "707755794824953866",
+                "last_message_id": "742074805230239804",
+                "name": "todolist-java",
+                "parent_id": "699811280625729637",
+                "permission_overwrites": [
+                    {
+                        "allow": "0",
+                        "deny": "1024",
+                        "id": "699800455655718962",
+                        "type": 0
+                    },
+                    {
+                        "allow": "1024",
+                        "deny": "0",
+                        "id": "699811537690427404",
+                        "type": 0
+                    }
+                ],
+                "position": 8,
+                "rate_limit_per_user": 0,
+                "topic": "this is the todolist for the Java version of the aes not for 2b2tmcpe discord inner use.",
+                "type": 0
+            }
+        ],
+        "default_message_notifications": 0,
+        "description": null,
+        "discovery_splash": null,
+        "embedded_activities": [],
+        "emojis": [],
+        "explicit_content_filter": 0,
+        "features": [],
+        "guild_hashes": {
+            "channels": {
+                "hash": "xy++1kjT0Qw",
+                "omitted": false
+            },
+            "metadata": {
+                "hash": "0HEdkNv2NVs",
+                "omitted": false
+            },
+            "roles": {
+                "hash": "fzuCrVrkatg",
+                "omitted": false
+            },
+            "version": 1
+        },
+        "guild_scheduled_events": [],
+        "icon": "834861a2c28793c1bae05ca9a3948cea",
+        "id": "699800455655718962",
+        "joined_at": "2021-10-24T22:49:16.990533+00:00",
+        "large": false,
+        "lazy": true,
+        "max_members": 250000,
+        "max_video_channel_users": 25,
+        "member_count": 4,
+        "members": [
+            {
+                "avatar": null,
+                "deaf": false,
+                "hoisted_role": null,
+                "is_pending": false,
+                "joined_at": "2021-10-24T22:49:16.990533+00:00",
+                "mute": false,
+                "nick": null,
+                "pending": false,
+                "premium_since": null,
+                "roles": [
+                    "901965600866308097"
+                ],
+                "user": {
+                    "avatar": null,
+                    "bot": true,
+                    "discriminator": "1220",
+                    "id": "901963489290113135",
+                    "username": "AES3201-Scratch"
+                }
+            }
+        ],
+        "mfa_level": 0,
+        "name": "AES3201-Dev",
+        "nsfw": false,
+        "nsfw_level": 0,
+        "owner_id": "293420269832503306",
+        "preferred_locale": "en-US",
+        "premium_progress_bar_enabled": false,
+        "premium_subscription_count": 0,
+        "premium_tier": 0,
+        "presences": [],
+        "public_updates_channel_id": null,
+        "region": "us-west",
+        "roles": [
+            {
+                "color": 0,
+                "hoist": false,
+                "icon": null,
+                "id": "699800455655718962",
+                "managed": false,
+                "mentionable": false,
+                "name": "@everyone",
+                "permissions": "1071698660929",
+                "position": 0,
+                "unicode_emoji": null
+            },
+            {
+                "color": 15844367,
+                "hoist": false,
+                "icon": null,
+                "id": "699811537690427404",
+                "managed": false,
+                "mentionable": false,
+                "name": "Developer",
+                "permissions": "6546771529",
+                "position": 1,
+                "unicode_emoji": null
+            },
+            {
+                "color": 0,
+                "hoist": false,
+                "icon": null,
+                "id": "699886545045553232",
+                "managed": true,
+                "mentionable": false,
+                "name": "AES3201-V2",
+                "permissions": "6442450952",
+                "position": 1,
+                "tags": {
+                    "bot_id": "579188567411130368"
+                },
+                "unicode_emoji": null
+            },
+            {
+                "color": 0,
+                "hoist": false,
+                "icon": null,
+                "id": "700484504950800526",
+                "managed": true,
+                "mentionable": false,
+                "name": "AES3201V2-Dev",
+                "permissions": "6442450952",
+                "position": 1,
+                "tags": {
+                    "bot_id": "587517502683348992"
+                },
+                "unicode_emoji": null
+            },
+            {
+                "color": 0,
+                "hoist": false,
+                "icon": null,
+                "id": "901965600866308097",
+                "managed": true,
+                "mentionable": false,
+                "name": "AES3201-Scratch",
+                "permissions": "8",
+                "position": 1,
+                "tags": {
+                    "bot_id": "901963489290113135"
+                },
+                "unicode_emoji": null
+            }
+        ],
+        "rules_channel_id": null,
+        "splash": null,
+        "stage_instances": [],
+        "stickers": [],
+        "system_channel_flags": 0,
+        "system_channel_id": "699800455655718965",
+        "threads": [],
+        "unavailable": false,
+        "vanity_url_code": null,
+        "verification_level": 0,
+        "voice_states": []
+    },
+    "op": 0,
+    "s": 2,
+    "t": "GUILD_CREATE"
+}
+None
+Connection closed, reconnecting
+None
+{
+    "d": {
+        "_trace": [
+            "[\"gateway-prd-main-djzf\",{\"micros\":0.0}]"
+        ],
+        "heartbeat_interval": 41250
+    },
+    "op": 10,
+    "s": null,
+    "t": null
+}
+
+{
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "596792fd8604f414e0ed3199e5aacc60",
+            "discriminator": "0021",
+            "id": "293420269832503306",
+            "public_flags": 256,
+            "username": "maxxie115"
+        },
+        "channel_id": "699800455655718965",
+        "components": [],
+        "content": "test",
+        "edited_timestamp": null,
+        "embeds": [],
+        "flags": 0,
+        "guild_id": "699800455655718962",
+        "id": "901991793229438977",
+        "member": {
+            "deaf": false,
+            "hoisted_role": null,
+            "joined_at": "2020-04-15T01:57:10.295000+00:00",
+            "mute": false,
+            "roles": [
+                "699811537690427404"
+            ]
+        },
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": "901991793237688320",
+        "pinned": false,
+        "referenced_message": null,
+        "timestamp": "2021-10-25T00:33:21.703000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 3,
+    "t": "MESSAGE_CREATE"
+}
