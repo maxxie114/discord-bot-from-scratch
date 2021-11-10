@@ -15,7 +15,7 @@ prefix: prefix-goes-here
 
 # Library and API used
 - This project does not use any third-party discord bot libraries
-- The project only uses [Discord API](https://discord.com/developers/docs/intro]) and the [Discord Gateway](https://discord.com/developers/docs/topics/gateway)
+- The project only uses [Discord API](https://discord.com/developers/docs/intro) and the [Discord Gateway](https://discord.com/developers/docs/topics/gateway)
 
 # Code Style
 - This project uses the [Google Python Coding Style](https://google.github.io/styleguide/pyguide.html)
