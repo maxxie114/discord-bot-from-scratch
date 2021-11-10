@@ -15,7 +15,7 @@ prefix: prefix-goes-here
 
 # Files and Directories
 - src: The source directory
-  - main.py: The main python file
+- main.py: The main python file
 - config.yml: Config file
 - requirements.txt: List of all dependencies
 - response.json: An example json response from discord

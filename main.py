@@ -25,10 +25,22 @@ headers = { "Authorization":"Bot {}".format(token),
             "Content-Type":"application/json", }
 
 def send_json_request(ws, request):
+    """Send the json request to the websocket
+       
+       ws: a websocket object
+       request: the Request body in json format
+    """
     ws.send(json.dumps(request))
 
-def receive_json_reponse(ws):
-    global sequence, session_id, token, resume
+def send_websocket_resume(ws, sequence, session_id, token):
+    """Send a resume request to websocket upon reconnection, so that connection
+       can be continued from the previous sequence
+
+       ws: A websocket object
+       sequence: The last sequence number from json response
+       session_id: The session ID of the previous session
+       token: The discord bot token
+    """
     resume = {
         "op": 6,
         "d": {
@@ -37,6 +49,17 @@ def receive_json_reponse(ws):
             "seq": sequence
         }
     }
+    ws.connect("wss://gateway.discord.gg/?v=9&encording=json")
+    send_json_request(ws, resume)
+
+def receive_json_reponse(ws, sequence, session_id, token):
+    """Return the received json response
+
+       ws: a websocket object
+       sequence: The last sequence number from json response
+       session_id: The session ID of the previous session
+       token: The discord bot token
+    """
     try:
         response = ws.recv()
         if response:
@@ -44,9 +67,7 @@ def receive_json_reponse(ws):
             return json_data
     except websocket.WebSocketConnectionClosedException:
         print("Connection closed, reconnecting")
-
-        ws.connect("wss://gateway.discord.gg/?v=9&encording=json")
-        send_json_request(ws, resume)
+        send_websocket_resume(ws, sequence, session_id, token)
     except Exception as ex:
         print(ex)
 
@@ -105,7 +126,7 @@ payload = {
 send_json_request(ws, payload)
 
 while True:
-    event = receive_json_reponse(ws)
+    event = receive_json_reponse(ws, sequence, session_id, token)
     try:
         # print(json.dumps(event, indent=4, sort_keys=True))
         # opcode 10: Hello
